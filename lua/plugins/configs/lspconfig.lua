@@ -6,7 +6,10 @@ local utils = require "core.utils"
 
 -- export on_attach & capabilities for custom lspconfigs
 require'lspconfig'.gopls.setup{}
+<<<<<<< HEAD
 require'lspconfig'.goimports.setup{}
+=======
+>>>>>>> e6b97a8c1057cf11c8f2bfa29ad6ee5e6244e84e
 require'lspconfig'.tsserver.setup{}
 M.setup_lsp = function(attach, capabilities)
   local lsp_config = require "lspconfig"
