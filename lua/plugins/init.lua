@@ -262,7 +262,23 @@ local default_plugins = {
       require("which-key").setup(opts)
     end,
   },
+
+    -- None ls for linting
+    {
+        "nvimtools/none-ls.nvim",
+        config = function()
+            local null_ls = require("null-ls")
+
+            null_ls.setup({
+                sources = {
+                    null_ls.builtins.formatting.stylua,
+                }
+            })
+        end,
+    },
 }
+
+
 
 local config = require("core.utils").load_config()
 
