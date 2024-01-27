@@ -307,12 +307,15 @@ local default_plugins = {
         dependencies = {
             {
                 "zbirenbaum/copilot-cmp",
-                config = function()
-                    require("copilot_cmp").setup()
+                opts = function()
+                    return require "plugins.configs.cmp"
+                end,
+                config = function(_, opts)
+                    require("copilot_cmp").setup(opts)
                 end,
             },
         },
-   },
+    },
 }
 
 

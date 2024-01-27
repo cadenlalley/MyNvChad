@@ -45,7 +45,7 @@ local function border(hl_name)
 end
 
 local options = {
-    preselect = "none",
+    preselect = cmp.PreselectMode.None,
     completion = {
         completeopt = "menu,menuone,noinsert,noselect",
     },
@@ -78,7 +78,6 @@ local options = {
         ["<C-e>"] = cmp.mapping.close(),
         ["<CR>"] = cmp.mapping.confirm {
             behavior = cmp.ConfirmBehavior.Insert,
-            select = true,
         },
         ["<C-Tab>"] = cmp.mapping(function(fallback)
             if cmp.visible() then
