@@ -63,7 +63,7 @@ require("lspconfig").lua_ls.setup {
 }
 
 local lsp_config = require "lspconfig"
-local servers = { "gopls", "rust_analyzer", "html", "cssls", "bashls", "emmet_ls", "tsserver", "clangd", "java_language_server" }
+local servers = { "gopls", "rust_analyzer", "html", "cssls", "bashls", "emmet_ls", "tsserver", "clangd", "java_language_server", "marksman" }
 for _, lsp in ipairs(servers) do
     lsp_config[lsp].setup {
         on_attach = M.on_attach,
