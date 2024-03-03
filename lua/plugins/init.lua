@@ -296,7 +296,9 @@ local default_plugins = {
         cmd = "Silicon",
         config = function()
             require("silicon").setup({
-                font = "JetBrainsMono Nerd Font=34;Noto Color Emoji=34"
+                font = "JetBrainsMono Nerd Font=34;Noto Color Emoji=34",
+                theme = "Dracula",
+                background = "#fff0"
             })
         end
     }

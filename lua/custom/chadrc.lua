@@ -1,6 +1,9 @@
 ---@type ChadrcConfig
 local M = {}
 
-M.ui = { theme = 'ayu_dark' }
+M.ui = {
+    theme = 'chadracula',
+    theme_toggle = { 'ayu_dark', 'chadracula' },
+}
 
 return M
