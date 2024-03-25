@@ -298,7 +298,8 @@ local default_plugins = {
             require("silicon").setup({
                 font = "JetBrainsMono Nerd Font=34;Noto Color Emoji=34",
                 theme = "Dracula",
-                background = "#fff0"
+                background = "#fff0",
+                to_clipboard = true,
             })
         end
     }
