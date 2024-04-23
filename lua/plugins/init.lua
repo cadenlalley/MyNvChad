@@ -268,11 +268,13 @@ local default_plugins = {
         dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
         opts = { disable_mouse = false }
     },
-    -- {
-    --     "zbirenbaum/copilot.lua",
-    --     event = "InsertEnter",
-    --     opts = overrides.copilot,
-    -- },
+
+    -- copilot
+    {
+        "zbirenbaum/copilot.lua",
+        event = "InsertEnter",
+        opts = overrides.copilot,
+    },
 
     {
         "hrsh7th/nvim-cmp",
