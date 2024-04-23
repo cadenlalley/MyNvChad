@@ -276,6 +276,7 @@ local default_plugins = {
         opts = overrides.copilot,
     },
 
+    -- cmp copilot
     {
         "hrsh7th/nvim-cmp",
         dependencies = {
@@ -289,6 +290,15 @@ local default_plugins = {
                 end,
             },
         },
+    },
+
+    -- obsidian
+    {
+        "epwalsh/obsidian.nvim",
+        version = "*",
+        lazy = true,
+        ft = "markdown",
+        dependencies = { "nvim-lua/plenary.nvim" },
     },
 
     -- Code Screenshots
