@@ -314,7 +314,14 @@ local default_plugins = {
                 to_clipboard = true,
             })
         end
+    },
+
+    -- Add vim fugitive
+    {
+        "tpope/vim-fugitive",
+
     }
+
 }
 
 
