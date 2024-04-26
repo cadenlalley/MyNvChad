@@ -319,7 +319,8 @@ local default_plugins = {
     -- Add vim fugitive
     {
         "tpope/vim-fugitive",
-
+        command = "Git",
+        event = "BufEnter",
     }
 
 }
